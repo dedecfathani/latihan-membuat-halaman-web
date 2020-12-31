@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'PoetsenOne';
+    src: url('../fonts/PoetsenOne-Regular.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'HarabaraMaisDemo';
+    src: url('../fonts/Harabara-Mais-Demo.otf') format('truetype');
+    
+}
+
+/*stlyle di bawah*/
+
+
+
+#page1, #page2 {
+    font: 16px/30px 'arial';
+    background-image: url(../img/pattern.png) ;
+}
+
+#page1 .container, #page2 .container {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    
+}
+
+#page1 header, #page2 header {
+    position: relative;
+    padding: 23px 50px 10px 50px;
+    /* background-image: linear-gradient(#0f5dea, #4b34ce); */
+    background-color: #dd9b0d ;
+    height: fit-content;
+    
+}
+
+#page1 header h1, #page2 header h1 {
+    margin-bottom: 3px;
+    font-family: 'HarabaraMaisDemo';
+    font-size: 45px;
+    color: white;
+}
+
+#page1 header h1 a, #page2 header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#page1 header p, #page2 header p {
+    font-family: 'arial';
+    font-size: 13px;
+    color: white;
+}
+
+#page1 header ul, #page2 header ul {
+    position: absolute;
+    right: 46px;
+    top: 50px;
+    font-family: 'arial';
+    display: inline-block;
+    list-style: none;
+}
+
+#page1 header ul li a:first-child, #page2 header ul li a:first-child {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+#page1 header ul li:hover a, #page2 header ul li:hover a {
+    background-color: blue;
+    
+    border-radius: 10px;
+}
+
+#page1 header ul li, #page2 header ul li {
+    display: inline-block;
+    padding: 0 30px 0 0;
+    font-size: 13px;
+    color: white;
+   
+}
+
+header ul li:nth-child(3) {
+    
+    padding-right: 0;
+}
+
+#page1 main, #page2 main {
+    padding: 50px;
+}
+
+main article {
+    width: 500px;
+}
+
+#page1 main p, #page2 main p {
+    text-align: justify;
+}
+
+#page2 main .judulartikel {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#page2 main aside {
+    position: absolute;
+    right: 50px;
+    top: 190px;
+    float: right;
+}
+
+#page2 table {
+    background-color: #0f5dea ;
+    width: 250px;
+    padding: 10px;
+}
+
+#page2 table th,td {
+    padding: 10px;
+    color: white;
+}
+
+#page1 footer, #page2 footer {
+    position: absolute;
+    background-color: #0f5dea;
+    height: 60px;
+    width: 900px;
+}
+
+#page1 footer img, #page2 footer img {
+   width: 20px;
+}
+
+#page1 footer .bungkus-icon, #page2 footer .bungkus-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+}
+
+#page1 footer .bungkus-icon .p1, #page2 footer .bungkus-icon .p1 {
+    
+    /* margin: 14px 10px 10px 172px; */
+    font-size: 30px;
+    color: white;
+   
+}
+
+#page1 footer .bungkus-icon .fb, #page2 footer .bungkus-icon .fb {
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#page1 footer .bungkus-icon .tw, #page1 footer .bungkus-icon .tw {
+    color: white;
+}
+
+
+    
+
+
+
+
+
+
