@@ -80,22 +80,21 @@
     display: inline-block;
     padding: 0 30px 0 0;
     font-size: 13px;
-    color: white;
-   
+    color: white;  
 }
 
-header ul li:nth-child(3) {
+/* header ul li:nth-child(3) {
     
     padding-right: 0;
-}
+} */
 
 #page1 main, #page2 main {
     padding: 50px;
 }
 
-main article {
+/* main article {
     width: 500px;
-}
+} */
 
 #page1 main p, #page2 main p {
     text-align: justify;
@@ -106,12 +105,12 @@ main article {
     margin-bottom: 15px;
 }
 
-#page2 main aside {
+/* #page2 main aside {
     position: absolute;
     right: 50px;
     top: 190px;
     float: right;
-}
+} */
 
 #page2 table {
     background-color: #0f5dea ;
@@ -131,11 +130,13 @@ main article {
     width: 900px;
 }
 
-#page1 footer img, #page2 footer img {
-   width: 20px;
+#page1 footer img, #page2 footer img 
+{
+    width: 20px;
 }
 
-#page1 footer .bungkus-icon, #page2 footer .bungkus-icon {
+#page1 footer .bungkus-icon, #page2 footer .bungkus-icon 
+{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -147,8 +148,7 @@ main article {
     
     /* margin: 14px 10px 10px 172px; */
     font-size: 30px;
-    color: white;
-   
+    color: white;  
 }
 
 #page1 footer .bungkus-icon .fb, #page2 footer .bungkus-icon .fb {
@@ -157,8 +157,198 @@ main article {
     margin-left: 20px;
 }
 
-#page1 footer .bungkus-icon .tw, #page1 footer .bungkus-icon .tw {
+#page1 footer .bungkus-icon .tw, #page2 footer .bungkus-icon .tw {
     color: white;
+}
+
+/* responsive */
+@media (max-width: 500px)
+{
+    #page1 .container, #page2 .container
+    {
+        width: 500px;
+        margin: 0 auto;
+        /* background-color: red; */
+        
+    }
+
+    #page1 header 
+    {
+        display: flex;
+        
+        width: 500px;
+        
+    }
+
+    #page1 header h1
+    {
+        display: flex;
+        order: 1;
+
+    }
+
+    #page1 header p
+    {
+        order: 2;
+        font-size: 12px;
+    }
+
+    #page1 header,p
+    {
+        flex-direction: column;
+    }
+    
+    #page1 header ul
+    {
+        margin-right: 77px;
+        margin-top: -19px;
+    }
+
+    #page1 footer
+    {
+        width: 500px;
+    }
+
+    /* page2 */
+    #page2 header 
+    {
+        display: flex;
+        
+        width: 500px;
+        
+    }
+
+    #page2 header h1
+    {
+        display: flex;
+        order: 1;
+
+    }
+
+    #page2 header p
+    {
+        order: 2;
+        font-size: 12px;
+    }
+
+    #page2 header,p
+    {
+        flex-direction: column;
+    }
+    
+    #page2 header ul
+    {
+        margin-right: 77px;
+        margin-top: -19px;
+    }
+
+    #page2 main 
+    {
+        display: flex; 
+        /* justify-content: space-between; */
+        width: 500px;
+        /* background-color: crimson;      */
+    }
+
+    #page2 main article
+    {
+        display: flex;
+        order: 1;
+        flex-basis: 300px;
+        flex-direction: column; 
+        /* background-color: darkgreen; */
+    }
+
+    #page2 main article span 
+    {
+        order: 1;
+    }
+
+    #page2 main article p 
+    {
+        order: 2;
+        /* background-color: pink; */
+        width: 230px;
+
+        
+    }
+
+    #page2 main aside
+    {
+        order: 2;
+        margin-left: -30px;
+    }
+
+    #page2 main aside table
+    {
+        /* display: flex; */
+        /* position: unset; */
+        /* order: 3;  */
+        float: none;
+        width: 250px;
+        background-color: #0f5dea;
+            
+    } 
+    
+    #page1 footer, #page2 footer
+    {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 40px;       
+    }
+
+    #page1 footer .bungkus-icon,  #page2 footer .bungkus-icon
+    {
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: black; */
+        left: 0;
+        top: 0;
+        transform: translate(0,0);
+        width: 500px;             
+    }
+
+    #page1 footer .bungkus-icon .p1, #page2 footer .bungkus-icon .p1
+    {
+        order: 1;
+        flex-grow: 0;
+        font-size: 22px;
+        /* background-color: yellow; */
+        
+    }
+
+    #page1 footer .bungkus-icon .fb, #page2 footer .bungkus-icon .fb
+    {
+        display: flex;
+        align-items: center;
+        flex-grow: 0;
+        order:2;
+        /* background-color: blue; */
+        
+    }
+
+    #page1 footer .bungkus-icon .fb img, #page2 footer .bungkus-icon .fb img
+    {
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+        margin-left: -6px;
+    }
+
+    #page1 footer .bungkus-icon .tw, #page2 footer .bungkus-icon .tw
+    {
+        display: flex;
+        flex-grow: 0;
+        order: 3;   
+        /* background-color: darkturquoise; */
+    }
+
+    #page1 footer .bungkus-icon .tw img, #page2 footer .bungkus-icon .tw img
+    {
+        margin-right: 3px;
+    }
 }
 
 
